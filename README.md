@@ -16,4 +16,13 @@ previous chapter, or a developer-defined type.
 
 In this Project you will see how various and exciting can be OOP Implementations in Javascript.
  
+Project includes the following files with corresponding functionality:
+
+    #1 "objectLiteral.js" :{
+        //Contains logic with Object Literal javascript OOP patern and Object.defineProperty Implementations
+    } 
+
+    
+        
+
 
