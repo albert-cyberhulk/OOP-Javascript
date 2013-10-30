@@ -85,6 +85,9 @@
      * Enumerable -> Indicates if the property will be returned in a for-inloop, Default: true
      * Writable -> Indicates if the property’s value can be changed, Default: true
      * Value -> Contains the actual data value for the property, Default: undefined
+     * Accessor properties:
+     * Configurable -> Makes the property configurable, removable via Delete, and can have dynamic attributes, Default: true
+     * Enumerable -> Indicates if the property will be returned in a for-inloop, Default: true
      * Get -> The function to call when the property is read from, Default: undefined
      * Set -> The function to call when the property is written to, Default: undefined.
      * Creating New Object person with Object Literal Constructor
@@ -104,8 +107,8 @@
     Object.defineProperty(person, 'name', {
         configurable: false, //Setting configurable to false, now it cannot be deleted
         enumerable: false, //Setting enumerable to false, and it won't show up in for in Loop
-        writable: false,
-        value: 'Albert'
+        writable: false, //this makes the value writable or not depending if the configurable is set or not
+        value: 'Albert',
     });
     //Checking logs
     console.log(person.name);//logs Albert
@@ -138,7 +141,122 @@
     } catch(ex) {
         console.error('Here we are, and our error is: ' + ex.message);
     }
+    /**
+     * Adding Property name with accessor properties get and set
+     * Supports IE9 and higher plus all latest browsers
+     * This works only if used accessor properties, better to use 
+     * With Configurable not set default to true
+     * See example below:
+     */
+    var person = {
+        //The property that should be managed with accessor get property
+        //Should be preceded with two underscores before it 
+        __name: 'Albert'
+    };
+    //Adding accessor methods property with accessor methods
+    Object.defineProperty(person, 'name', {
+       //Defining get method which is called when the property is accessed outside
+       get: function() {
+           //returns the __name's value + plus custom string
+           return 'Knock Knock ' + this.__name + ', Matrix has you!';
+       },
+       /**
+        * Defining set method, which performs defined action when the property is being set outside
+        * If this property is omitted then property is not writable by default
+        * @param {any value} newValue
+        */
+       set: function(newValue) {
+           //sets Objects name property to newValue param
+           this.__name = newValue;
+       }
+    });
+    //Checking logs
+    console.log(person.name);//logs Albert
+    //Setting person name
+    person.name = "Neo";
+    //Checking logs
+    console.log(person.name);//logs Neo
     
+    /**
+     * Defining multiple Properties with Data and Accessor properties
+     * Since there’s a high likelihood that you’ll need to define more than one property on an object, 
+     * ECMAScript 5 provides the Object.defineProperties()method
+     * @method Object.defineProperties()
+     */
+    var person = {
+         //Defining property __name which will be accessed from outside
+         __name: 'Albert',
+         //Defining property age
+         age: 28,
+         //Defining property job
+         __job: 'Software Developer' 
+    };
+    /**
+     * @method Object.defineProperties()
+     * @Object person
+     * @param {string} name
+     * @param {int} age
+     * @param {string} job
+     */
+    Object.defineProperties(person, {
+        //Defining accessor property name with getter method
+        name: {
+          //Getter function  
+          get: function() {
+            //returns the __name's value + plus custom string
+            return 'Knock Knock ' + this.__name + ', Matrix has you!';
+          }  
+        },
+        //accessor property job with getter and setter methods
+        job: {
+            //Getter function
+            get: function() {
+                //returns the __job's value + plus custom string
+                return 'You are now ' + this.__job + ', Zion needs you!';
+            },
+            //Seter function sets value of this __job property
+            //@param {any value} newValue
+            set: function(newValue) {
+                //sets Objects __job property to newValue param
+                this.__job = newValue;
+            }
+        }
+    });
+    //Checking logs
+    console.log(person.name);//logs 'Knock Knock Albert, Matrix has you!';
+    console.log(person.age);//logs 28
+    console.log(person.job);//logs 'You are now Software Developer', Zion needs you!';
+    //Assigning new value to name
+    person.name = 'Neo';
+    //Checking logs
+    console.log(person.name);//logs 'Knock Knock Albert, Matrix has you!'; because it has only getter method
+    //Assigning new value to job
+    person.job = 'The one';
+    //Checking logs
+    console.log(person.job);//logs 'You are The one', Zion needs you!';
+    /**
+     * Reading Property Attributes
+     * It’s also possible to retrieve the property descriptor for a given property by using the ECMAScript 5 
+     * Object.getOwnPropertyDescriptor()method. This method accepts two arguments: the object on 
+     * which the property resides and the name of the property whose descriptor should be retrieved. The 
+     * return value is an object with properties for configurable, enumerable, get, and setfor accessor 
+     * properties or configurable, enumerable, writable, and valuefor data properties. Example 
+     */
+    //Getting reference to the descripton of person object's property name
+    var descriptor = Object.getOwnPropertyDescriptor(person, "__name");
+    //Checking logs
+    console.log(JSON.stringify(descriptor)); //logs {"value":"Albert","writable":true,"enumerable":true,"configurable":true}
+    console.log(descriptor.value);//logs Albert
+    console.log(descriptor.configurable);//logs true
+    console.log(typeof descriptor.get);//logs undefined, because this is a data Property
+    //Getting reference to the descripton of person object's property __name
+    var descriptor = Object.getOwnPropertyDescriptor(person, "name");
+    //Checking logs
+    console.log(JSON.stringify(descriptor)); //los {"enumerable":false,"configurable":false} 
+    console.log(descriptor.value);//logs undefined
+    console.log(descriptor.configurable);//logs false
+    console.log(typeof descriptor.get);//logs function
+    console.log(descriptor.get.toString());//logs function () {return 'Knock Knock ' + this.__name + ', Matrix has you!';}
     
 })(); //END OF FUNCTION
 
