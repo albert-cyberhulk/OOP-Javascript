@@ -18,13 +18,10 @@ In this Project you will see how various and exciting can be OOP Implementations
  
 Project includes the following files with corresponding functionality:
 
-    #1 "objectLiteral.js" :{
-        //Contains logic with Object Literal javascript OOP patern and Object.defineProperty Implementations
-    }
+    #1 "objectLiteral.js" -> Contains logic with javascript Object Literal OOP patern and Object.defineProperty Implementations
     
-    #2 "factoryPattern.js" : {
-        
-    }
+    #2 "factoryPattern.js" -> Contains logic with javascript Factory OOP patern
+    
 
     
         
