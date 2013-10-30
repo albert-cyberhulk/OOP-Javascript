@@ -17,7 +17,7 @@
      * With no way to define classes in ECMAScript
      * Factory patter encapsulates the creation of object within specific interface
      */
-     //Creating person Object with Factory patterm
+     //Creating person Object using Factory pattern
      /**
       * @method createPerson()
       * @param {string} name
@@ -28,7 +28,7 @@
     function createPerson(name, age, job) {
         //creating new Object with Object Constructor
         var person = new Object();
-        //Defining prperty of person name
+        //Defining property of person name
         person.name = name;
         //Defining property of person age
         person.age = age;
