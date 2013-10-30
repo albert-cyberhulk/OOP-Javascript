@@ -50,10 +50,11 @@
     console.log(person1.name);//logs Albert
     console.log(person1.age);//logs 28
     console.log(person1.job);//logs 'Software Developer'
+    console.log(person1.sayName());//logs Albert
     console.log(person2.name);//logs Neo
     console.log(person2.age);//logs 29
     console.log(person2.job);//logs The one
-    
+    console.log(person2.sayName());//logs Neo
        
 })();//END OF FUNCTION
 
