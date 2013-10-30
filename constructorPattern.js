@@ -26,7 +26,7 @@
      * @param {string} job
      * @return {Object} person
      */
-    function Person(name, age, job) {
+     function Person(name, age, job) {
          //Defining property of person name
          this.name = name;
          //Defining property of person age
@@ -34,11 +34,24 @@
          //Defining property of person job
          this.job = job;
          //Defining method of person sayName()
-         this.sayName = function() {
-             //returning name property of Person
-             return this.name;
-         };
+         this.sayName = sayName;
      }
+     /**
+      * @method sayName
+      * Defining external method
+      * Because constructor pattern has its Quirks
+      * Every time instantiating the Person we recreate every method and property
+      * And its not optimal to recreate the same function 
+      * So to Avoid this its better to Assign external function to local property and
+      * As its called from Person Object this equals to Instance of Person not to window
+      * Object
+      * @returns {string} name
+      */
+     function sayName() {
+        //returning name property of Person
+        return this.name;
+     } 
+     
     //Creating Instances of person Object through Constructo pattern and adding new keyword
     var person1 = new Person('Albert', 28, 'Software Developer');
     var person2 = new Person('Neo', 29, 'The One');
