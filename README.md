@@ -20,7 +20,11 @@ Project includes the following files with corresponding functionality:
 
     #1 "objectLiteral.js" :{
         //Contains logic with Object Literal javascript OOP patern and Object.defineProperty Implementations
-    } 
+    }
+    
+    #2 "factoryPattern.js" : {
+        
+    }
 
     
         

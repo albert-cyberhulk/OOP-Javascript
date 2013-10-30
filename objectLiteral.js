@@ -1,6 +1,6 @@
 /** 
  * @filename objectLiteral.js
- * Contains logic with Object Literal javascript OOP patern
+ * Contains logic with javascript Object Literal OOP patern
  * @Author Albert Stepanyan
  * @Date(29.10.2013)
  */
