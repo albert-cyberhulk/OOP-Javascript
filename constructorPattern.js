@@ -2,7 +2,6 @@
  * @filename constructorPattern.js
  * Contains logic with javascript Constructor OOP patern
  * @Author Albert Stepanyan
- * @Date(30.10.2013)
  */
 
 /**
@@ -24,7 +23,7 @@
      * @param {string} name
      * @param {int} age
      * @param {string} job
-     * @return {Object} person
+     * @return {undefined}
      */
      function Person(name, age, job) {
          //Defining property of person name

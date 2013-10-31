@@ -2,7 +2,6 @@
  * @filename factoryPattern.js
  * Contains logic with javascript Factory OOP patern
  * @Author Albert Stepanyan
- * @Date(30.10.2013)
  */
 
 /**

@@ -2,7 +2,6 @@
  * @filename objectLiteral.js
  * Contains logic with javascript Object Literal OOP patern and Object.defineProperty Implementations
  * @Author Albert Stepanyan
- * @Date(29.10.2013)
  */
 
 /**

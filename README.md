@@ -26,5 +26,5 @@ Project includes the following files with corresponding functionality:
     
     4. prototypePattern.js -> Contains logic with javascript Prototype OOP patern
         
-
+    5. constructorPrototypePattern.js Contains logic for mixed Constructor - Prototype Pattern
 
