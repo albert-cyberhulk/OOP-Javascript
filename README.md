@@ -29,3 +29,7 @@ Project includes the following files with corresponding functionality:
     5. constructorPrototypePattern.js -> Contains logic for mixed Constructor - Prototype Pattern
 
     6. dynamicPrototypePattern.js -> Contains logic for Dynamic Prototype Pattern
+    
+    7. parasiticConstructorPattern.js -> Contains logic for Parasitic Constructor Pattern
+
+    8. durableConstructor.js -> Contains logic for Durable Constructor Pattern

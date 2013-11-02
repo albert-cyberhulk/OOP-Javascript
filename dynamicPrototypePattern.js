@@ -17,6 +17,14 @@
      * Keeping clear Separation Between COnstrcutor Pattern and Prototype Pattern
      * Shortly Said this is Constructor - Prototype pattern but defined in Constructor for visual purposes
      */
+    
+    /**
+     * @method Person Defining Constructor Person
+     * @param {String} name
+     * @param {Int} age
+     * @param {String} job
+     * @returns {_L11.Person}
+     */
     function Person(name, age, job) {
         //Defining property name;
         this.name = name;
