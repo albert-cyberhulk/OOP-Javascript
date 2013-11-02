@@ -95,6 +95,11 @@
     console.log(person2.sayJob());//logs The One
     console.log(person1.job);//logs undefined as the job is private
     console.log(person2.job);//logs undefined as the job is private
+    //Adding Friends to person2
+    person2.addFriends();
+    //Checking logs
+    console.log(person1.returnFriends());//logs []
+    console.log(person2.returnFriends());//logs ['Morpehus', Trinity, Neoba]
     
 })();//END OF FUNCTION 
 
