@@ -19,6 +19,14 @@
      * Sharing across all instances its methods with Prototype Pattern
      * But Keeping methods in its constructor not to rewrite values and not share for every instance
      */
+    
+    /**
+     * @method Person Defining Constructor Person
+     * @param {type} name
+     * @param {type} age
+     * @param {type} job
+     * @returns {_L11.Person}
+     */
     function Person(name, age, job) {
         //Defining property name;
         this.name = name;
