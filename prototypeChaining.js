@@ -35,6 +35,8 @@
        this.age = age;
        //Defining property job as an empty string
        this.job = job;
+       //Defining property friends
+       this.friends = [];
    }
    /**
     * @method sayName
@@ -125,7 +127,29 @@
    console.log(Albert.hasOwnProperty('name'));//logs false
    console.log(Albert.hasOwnProperty('age'));//logs false
    console.log(Albert.hasOwnProperty('job'));//logs false
-  
+   //pushing new values to freinds of Person
+   Albert.friends.push('Nickolas Zakas, Douglas Crowkford, John Reisig, Ryan Dahl');
+   //Checking logs 
+   console.log(Albert.friends);//logs ['Nickolas Zakas, Douglas Crowkford, John Reisig, Ryan Dahl']
+   /**
+    * Here we came slightly to the quirks of prototype Chain Inheritance
+    * We know that putting properties into protypes makes them shared within instances
+    * Which is not so good, so we solved that by putting them in constructors
+    * Ok but not in this case cause when we make prototype Chain inheritance 
+    * the prototype actually becomes an instance of another type, meaning 
+    * that what once were instance properties are now prototype properties
+    */
+    //Instantiating the Object Author with Our Neo
+    var Neo = new Author();
+   //Checking logs
+   console.log(Neo.friends);//logs logs ['Nickolas Zakas, Douglas Crowkford, John Reisig, Ryan Dahl']
+   /**
+    * This happens because Author.prototype equals to new Instance of Person
+    * So friends array is now a property of a prototype and of course becomes shared
+    * Its changing its behaviour and when we access Instance.friends 
+    * It looks up in prototype of Author not in Person itself
+    */
+   
 })();//END OF FUNCTION
 
 
