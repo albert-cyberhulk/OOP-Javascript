@@ -18,18 +18,20 @@ In this Project you will see how various and exciting can be OOP Implementations
  
 Project includes the following files with corresponding functionality:
 
-    1. objectLiteral.js -> Contains logic with javascript Object Literal OOP patern and Object.defineProperty Implementations
+    1. objectLiteral.js -> Contains logic with Javascript Object Literal OOP patern and Object.defineProperty Implementations
     
-    2. factoryPattern.js -> Contains logic with javascript Factory OOP patern
+    2. factoryPattern.js -> Contains logic with Javascript Factory OOP patern
     
-    3. constructorPattern.js -> Contains logic with javascript Constructor OOP patern
+    3. constructorPattern.js -> Contains logic with Javascript Constructor OOP patern
     
-    4. prototypePattern.js -> Contains logic with javascript Prototype OOP patern
+    4. prototypePattern.js -> Contains logic with Javascript Prototype OOP patern
         
-    5. constructorPrototypePattern.js -> Contains logic for mixed Constructor - Prototype Pattern
+    5. constructorPrototypePattern.js -> Contains logic with Javascript mixed Constructor - Prototype Pattern
 
-    6. dynamicPrototypePattern.js -> Contains logic for Dynamic Prototype Pattern
+    6. dynamicPrototypePattern.js -> Contains logic with Javascript Dynamic Prototype Pattern
     
-    7. parasiticConstructorPattern.js -> Contains logic for Parasitic Constructor Pattern
+    7. parasiticConstructorPattern.js -> Contains logic with Parasitic Constructor Pattern
 
-    8. durableConstructor.js -> Contains logic for Durable Constructor Pattern
+    8. durableConstructor.js -> Contains logic with Javascript Durable Constructor Pattern
+
+    9. prototypeChaining.js -> Contains logic with Javascript Prototype Chaining Inheritance Pattern
