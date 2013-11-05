@@ -38,4 +38,6 @@ Project includes the following files with corresponding functionality:
     
 	10.combinationInheritance.js -> Contains logic with Javascript Combination Inheritance Pattern
 	
+	11.prototypalInheritance.js -> Contains logic with Javascript Prototypal Inheritance Pattern
+	
 	 
