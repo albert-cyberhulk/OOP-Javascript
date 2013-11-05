@@ -41,7 +41,6 @@
     person.job = "Team Leader";
     //Checking logs
     console.log(person.job);
-
     /**
      * Creating New Object person with Object Literal Constructor
      * @param {string} name

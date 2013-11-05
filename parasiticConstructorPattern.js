@@ -1,7 +1,7 @@
 /** 
  * @filename parasiticConstructorPattern.js
  * Contains logic for Parasitic Constructor Pattern
- * @Author Albert Stepanyan
+ * @author Albert Stepanyan
  */
 
 /**
