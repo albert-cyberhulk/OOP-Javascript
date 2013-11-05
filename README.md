@@ -36,4 +36,6 @@ Project includes the following files with corresponding functionality:
 
     9. prototypeChaining.js -> Contains logic with Javascript Prototype Chaining Inheritance Pattern
     
-	10.constructorStealing.js -> Contains logic with Javascript Constructor Stealing Inheritance Pattern 
+	10.combinationInheritance.js -> Contains logic with Javascript Combination Inheritance Pattern
+	
+	 
