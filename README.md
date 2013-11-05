@@ -35,3 +35,5 @@ Project includes the following files with corresponding functionality:
     8. durableConstructor.js -> Contains logic with Javascript Durable Constructor Pattern
 
     9. prototypeChaining.js -> Contains logic with Javascript Prototype Chaining Inheritance Pattern
+    
+	10.constructorStealing.js -> Contains logic with Javascript Constructor Stealing Inheritance Pattern 
