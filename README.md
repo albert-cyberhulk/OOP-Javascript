@@ -5,8 +5,8 @@ My Personal Tests With OOP in Javascript
 
 In this Project you will find most of the famous OOP paterns used in Javascript.
 
-Basically ECMA-262 defines an object as an “unordered collection of properties each of which contains 
-a primitive value, object, or function.” Strictly speaking, this means that an object is an 
+Basically ECMA-262 defines an object as an ‚Äúunordered collection of properties each of which contains 
+a primitive value, object, or function.‚Äù Strictly speaking, this means that an object is an 
 array of values in no particular order. Each property or method is identified by a name that 
 is mapped to a value. For this reason (and others yet to be discussed), it helps to think of 
 ECMAScript objects as hash tables: nothing more than a grouping of name-value pairs where 
@@ -36,8 +36,9 @@ Project includes the following files with corresponding functionality:
 
     9. prototypeChaining.js -> Contains logic with Javascript Prototype Chaining Inheritance Pattern
     
-	10.combinationInheritance.js -> Contains logic with Javascript Combination Inheritance Pattern
+    10.combinationInheritance.js -> Contains logic with Javascript Combination Inheritance Pattern
 	
-	11.prototypalInheritance.js -> Contains logic with Javascript Prototypal Inheritance Pattern
+    11.prototypalInheritance.js -> Contains logic with Javascript Prototypal Inheritance Pattern
 	
+    12. objectCreate.js -> Contains logic with Javascript Object.create Inheritance Pattern
 	 
