@@ -51,7 +51,7 @@
 	}
 	/**
 	 * @method Person
-     * @param {Object} name
+         * @param {Object} name
 	 */
 	function Person(name) {
 		//Defining Property name
@@ -75,7 +75,7 @@
 		Person.call(this, name);
 		this.age = age;
 	}
-    //Inheriting Process
+        //Inheriting Process
 	inheritPrototype(Author, Person);
 	/**
 	 * @method sayAge
