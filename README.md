@@ -15,6 +15,10 @@ Each object is created based on a reference type, either one of the native types
 previous chapter, or a developer-defined type.
 
 In this Project you will see how various and exciting can be OOP Implementations in Javascript.
+
+And you have to see and feel yourself how deep is the rabbit hole.
+
+And remember if you choose the red pill you will forever stay a Javascript addict.
  
 Project includes the following files with corresponding functionality:
 
