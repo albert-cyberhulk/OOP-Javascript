@@ -22,7 +22,7 @@
 	 */	
 	/**
 	 * @method Person 
-	 * Creating Person Object
+	 * Creating Person Object as a Constructor
 	 * with a default friends property 
 	 * filled in with data
 	 */ 
