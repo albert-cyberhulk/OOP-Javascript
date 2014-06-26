@@ -1,2 +1,4 @@
 .project
 .idea/
+/nbproject/private/
+/nbproject
