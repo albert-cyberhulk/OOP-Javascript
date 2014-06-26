@@ -68,8 +68,8 @@
     //Checking logs
     console.log(person1.constructor.toString());//logs the stringified version of function Person
     console.log(person2.constructor.toString());//logs the stringified version of function Person
-    console.log(person2.constructor == Person);//logs true
-    console.log(person2.constructor == Person);//logs true
+    console.log(person2.constructor === Person);//logs true
+    console.log(person2.constructor === Person);//logs true
     console.log(person1 instanceof Object);//logs true
     console.log(person1 instanceof Person);//logs true
     console.log(person2 instanceof Object);//logs true
