@@ -48,10 +48,6 @@
 	}
 	//Inheriting from Person 
 	Author.prototype = new Person();
-	/**
-	 * @method Neo
-	 * Creating Child object Neo
-	 */
 	//Instantiating Object Author
 	var Albert = new Author();
 	//Changing constructor pointer
