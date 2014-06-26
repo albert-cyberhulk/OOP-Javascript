@@ -58,6 +58,8 @@
 	Albert.constructor = Author;
 	//Instantiating Object Author
 	var Neo = new Author();
+        //Changing constructor pointer
+        Neo.constructor = Author;
 	//Pushing new value to Person.friends from Anderson instance
 	Neo.friends.push('Morpheus');
 	Neo.friends.push('Trinity');
