@@ -72,7 +72,7 @@
     var Neo = Person.getInstance();
     console.log(Albert.publicMethod());//Outputs "The public can see me"
     console.log(Neo.publicMethod());//Outputs ""The public can see me"
-    console.log(Albert.getRandomNumber() == Neo.getRandomNumber());
+    console.log(Albert.getRandomNumber() == Neo.getRandomNumber());//Outputs true
 
 })();//END OF FUNCTION
 
