@@ -51,3 +51,7 @@ Project includes the following files with corresponding functionality:
     14.parasiticCombinationInheritance.js -> Contains logic for Javascript Parasitic Combination Inheritance Pattern
 	 
     15.objectCreateInheritance.js -> Contains logic with Javascript Combination Inheritance Pattern with Object Create method
+    
+    16.singleTonePattern.js -> Contains logic with Javascript SingleTone Patern
+
+
